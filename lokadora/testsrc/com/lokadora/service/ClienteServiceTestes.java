@@ -10,7 +10,7 @@ class ClienteServiceTestes {
 
 	@Test
 	void testValidCPF() {
-		ClienteService cSrv = new ClienteService();
+		ClienteService cSrv = ClienteService.getClienteService();
 		Cliente c = new com.lokadora.bean.Cliente("41085578321", "luanacostaribeiro@gmail.com", "123batatatinha", "Luana", "Ribeiro");
 		assertEquals(true, cSrv.validaCPF(c));
 		
